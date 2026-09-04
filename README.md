@@ -49,8 +49,18 @@ To initialize the local SQL Server database for testing or grading:
 The backend service provides RESTful HTTP endpoints for authentication, event management, participant enrolments, and result entry.
 
 - **Authentication**: User registration (`POST /api/auth/register`) and JWT token login (`POST /api/auth/login`).
+
 - **Events**: Public listing of events (`GET /api/events`) and Organiser creation (`POST /api/events`).
 - **Enrolments**: Participant category entry (`POST /api/enrolments`).
 - **Results**: Official finish time recording (`POST /api/results`).
 
-*The complete REST API Endpoint Plan table is documented in [`docs/api_endpoint_plan.md`](docs/api_endpoint_plan.md).*
+*The complete REST API Endpoint Plan table is documented in [`docs/a
+
+pi_endpoint_plan.md`](docs/api_endpoint_plan.md).*
+
+## CI/CD Workflow
+This repository features an automated **GitHub Actions** CI/CD pipeline configured in `.github/workflows/validate_docs.yml`. The workflow automatically runs on every `push` or `pull_request` to validate the presence and structure of required documentation artifacts in the `/docs` folder.
+
+## Video Presentation
+- **YouTube Video Link**: [RaceDay Platform Presentation - Unlisted Video](https://youtu.be/mEiFTfahw5w)
+> *Note: Includes an overview of the entity relationship diagram, database normalization, and REST API architectural planning.*
