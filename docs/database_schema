@@ -1,0 +1,9 @@
+# Database Schema Overview
+
+The **RaceDayDb** relational database consists of 6 core entities:
+- **Roles**: Stores user permissions (`Organiser`, `Participant`).
+- **Users**: Stores system accounts linked to a specific Role.
+- **Events**: Sports events created and managed by Organisers.
+- **EventCategories**: Sub-categories offered under an event (e.g., 21.1km Half Marathon).
+- **EventEnrolments**: Participant registrations for event categories.
+- **Results**: Final performance metrics recorded for completed enrolments.
