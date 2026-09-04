@@ -31,3 +31,17 @@ The system relies on a normalized relational SQL Server database (`RaceDayDb`) c
 ![RaceDay Entity Relationship Diagram](docs/ERD.drawio.png)
 
 *Detailed relationship cardinalities and Crow's Foot notation rules can be reviewed in [docs/relationships.md](docs/relationships.md).*
+
+## Database Setup Instructions
+To initialize the local SQL Server database for testing or grading:
+
+1. Open **SQL Server Management Studio (SSMS)** and connect to your SQL Server instance.
+2. Open the complete database script located at [`docs/RaceDay_Database_Setup.sql`](docs/RaceDay_Database_Setup.sql).
+3. Execute the script (`F5`) to create the `RaceDayDb` database, execute `CREATE TABLE` DDL queries, apply foreign key constraints, and seed initial test records.
+4. Run verification queries to confirm table population:
+   ```sql
+   USE RaceDayDb;
+   SELECT * FROM Users;
+   SELECT * FROM Events;
+
+   
