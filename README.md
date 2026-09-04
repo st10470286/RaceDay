@@ -24,3 +24,10 @@
 - **Event Lifecycle Management**: Organisers can publish upcoming events, configure specific distance categories (e.g., 21.1km Half Marathon), set entry fees, and cap maximum participants.
 - **Seamless Registration**: Participants can browse upcoming races, register for specific categories, and track payment status.
 - **Results Tracking**: Organisers record official finish times and placement rankings (Overall and Category positions) upon race completion.
+
+## Database Schema & ERD
+The system relies on a normalized relational SQL Server database (`RaceDayDb`) comprising 6 core entities: `Roles`, `Users`, `Events`, `EventCategories`, `EventEnrolments`, and `Results`.
+
+![RaceDay Entity Relationship Diagram](docs/erd_diagram.png)
+
+*Detailed relationship cardinalities and Crow's Foot notation rules can be reviewed in [docs/relationships.md](docs/relationships.md).*
