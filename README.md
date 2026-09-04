@@ -64,3 +64,6 @@ This repository features an automated **GitHub Actions** CI/CD pipeline configur
 ## Video Presentation
 - **YouTube Video Link**: [RaceDay Platform Presentation - Unlisted Video](https://youtu.be/mEiFTfahw5w)
 > *Note: Includes an overview of the entity relationship diagram, database normalization, and REST API architectural planning.*
+
+---
+*RaceDay Event Management Platform — Portfolio of Evidence Part 1*
