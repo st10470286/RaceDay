@@ -7,3 +7,7 @@ The **RaceDayDb** relational database consists of 6 core entities:
 - **EventCategories**: Sub-categories offered under an event (e.g., 21.1km Half Marathon).
 - **EventEnrolments**: Participant registrations for event categories.
 - **Results**: Final performance metrics recorded for completed enrolments.
+
+## Primary & Foreign Key Constraints
+- All tables feature auto-incrementing identity primary keys.
+- Foreign keys enforce Referential Integrity with `ON DELETE CASCADE` enabled on child tables.
