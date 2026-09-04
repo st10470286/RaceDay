@@ -28,6 +28,6 @@
 ## Database Schema & ERD
 The system relies on a normalized relational SQL Server database (`RaceDayDb`) comprising 6 core entities: `Roles`, `Users`, `Events`, `EventCategories`, `EventEnrolments`, and `Results`.
 
-![RaceDay Entity Relationship Diagram](docs/erd_diagram.png)
+![RaceDay Entity Relationship Diagram](docs/ERD.drawio.png)
 
 *Detailed relationship cardinalities and Crow's Foot notation rules can be reviewed in [docs/relationships.md](docs/relationships.md).*
