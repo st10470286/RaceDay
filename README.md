@@ -15,3 +15,12 @@
 4. [Database Setup Instructions](#database-setup-instructions)
 5. [CI/CD Workflow](#cicd-workflow)
 6. [Video Presentation](#video-presentation)
+
+## Project Overview
+**RaceDay** is a centralized sports event management platform designed to streamline event organization, athlete registration, and race result tracking across running, walking, and cycling events in South Africa.
+
+### Core Features & Functionality
+- **User Roles & Access Control**: Differentiates between Event Organisers and Event Participants.
+- **Event Lifecycle Management**: Organisers can publish upcoming events, configure specific distance categories (e.g., 21.1km Half Marathon), set entry fees, and cap maximum participants.
+- **Seamless Registration**: Participants can browse upcoming races, register for specific categories, and track payment status.
+- **Results Tracking**: Organisers record official finish times and placement rankings (Overall and Category positions) upon race completion.
