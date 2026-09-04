@@ -1,0 +1,52 @@
+name: Validate Documentation & Database Script
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  validate-part1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Verify /docs Folder Exists
+        run: |
+          if [ -d "docs" ]; then
+            echo "SUCCESS: /docs directory exists."
+          else
+            echo "ERROR: /docs directory is missing!"
+            exit 1
+          fi
+
+      - name: Verify Required Planning Documents
+        run: |
+          echo "Checking required files for Part 1 submission..."
+          
+          if [ -f "docs/ERD.drawio.png" ] || [ -f "docs/erd_diagram.png" ]; then
+            echo "SUCCESS: ERD image found."
+          else
+            echo "ERROR: Missing ERD image in /docs folder!"
+            exit 1
+          fi
+
+          if [ -f "docs/api_endpoint_plan.md" ] || [ -f "docs/api_endpoint_plan.pdf" ]; then
+            echo "SUCCESS: API Endpoint Plan found."
+          else
+            echo "ERROR: Missing API Endpoint Plan in /docs folder!"
+            exit 1
+          fi
+
+          if [ -f "docs/RaceDay_Database_Setup.sql" ] || [ -f "docs/script.sql" ]; then
+            echo "SUCCESS: SQL Database Script found."
+          else
+            echo "ERROR: Missing SQL script in /docs folder!"
+            exit 1
+          fi
+
+      - name: Workflow Completed Successfully
+        run: echo "All Part 1 documentation and database files have been verified!"
